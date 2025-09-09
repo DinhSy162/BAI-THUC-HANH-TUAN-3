@@ -15,7 +15,7 @@ public class Bai_2 {
         System.err.println("Chieu cao: " + chieucao + "M");
         System.err.println("gioi tinh:" +gioitinh );
         System.err.println("co thich lap trinh khong: " + cothichlaptrinh );
-        System.err.println("Co thich ban Kim Ngan nua hehe");
+      
     }
     
 }
