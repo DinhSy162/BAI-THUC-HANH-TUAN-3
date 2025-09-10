@@ -34,3 +34,63 @@ public class Bai_2 {
     
 }
 // Bai3
+package bai3;
+
+import java.util.Scanner;
+
+public class BAI3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Nhap so nguyen thu nhat: ");
+        int a = scanner.nextInt();
+
+        System.out.print("Nhap so nguyen thu hai: ");
+        int b = scanner.nextInt();
+
+        int tong = a + b;
+        int hieu = a - b;
+        int tich = a * b;
+        int thuong = (b != 0) ? a / b : 0;
+        int phanDu = (b != 0) ? a % b : 0;
+
+        System.out.println("Tong: " + tong);
+        System.out.println("Hieu: " + hieu);
+        System.out.println("Tich: " + tich);
+        if (b != 0) {
+            System.out.println("Thuong: " + thuong);
+            System.out.println("Phan du: " + phanDu);
+        } else {
+            System.out.println("Khong the chia cho 0!");
+        }
+
+        scanner.close();
+    }
+}
+// Bai 4
+package bai4;
+
+import java.util.Scanner;
+
+public class Bai4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("nhap so tien gui (VND): ");
+        double soTienGui = sc.nextDouble();
+
+        System.out.print("nhap lai suat hang nam (%): ");
+        double laiSuatNam = sc.nextDouble();
+
+        System.out.print("nhap so thang gui : ");
+        int soThang = sc.nextInt();
+
+        double tienLai = soTienGui * (laiSuatNam / 100.0 / 12.0) * soThang;
+        double tongTien = soTienGui + tienLai;
+
+        System.out.println("\n----- KET QUA -----");
+        System.out.println("so tien goc: " + soTienGui + " VND");
+        System.out.println("tien lai: " + tienLai + " VND");
+        System.out.println("tong so tien cuoi ky: " + tongTien + " VND");
+    }
+}
